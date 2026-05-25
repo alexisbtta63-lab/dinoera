@@ -1,0 +1,372 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0D1117;
+    color:white;
+    font-family:'Inter', sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+header h1{
+    font-family:'Montserrat';
+    font-size:2rem;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#F4A261;
+}
+
+#modoBtn{
+    background:#F4A261;
+    border:none;
+    padding:10px 15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-text{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+}
+
+.hero h2{
+    font-size:4rem;
+    font-family:'Montserrat';
+}
+
+.hero p{
+    margin-top:20px;
+    line-height:1.8;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#F4A261;
+    color:black;
+    padding:15px 30px;
+    border-radius:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    padding:120px 50px;
+}
+
+.section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:30px;
+    font-family:'Montserrat';
+}
+
+.intro{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.card li{
+    margin-bottom:10px;
+}
+
+.triasico{
+    border:2px solid #E63946;
+}
+
+.jurasico{
+    border:2px solid #2A9D8F;
+}
+
+.cretacico{
+    border:2px solid #457B9D;
+}
+
+.dino-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.dino-card{
+    width:320px;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.dino-card:hover{
+    transform:scale(1.05);
+}
+
+.dino-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.dino-card h3{
+    padding:20px;
+}
+
+.dino-card p{
+    padding:0 20px 20px;
+    line-height:1.6;
+}
+
+.extincion{
+    background:#050505;
+    padding:120px 50px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.causas{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.cause{
+    width:300px;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+}
+
+.extra-info{
+    max-width:900px;
+    margin:auto;
+    margin-top:60px;
+    line-height:1.8;
+}
+
+.gallina{
+    margin-top:50px;
+    font-size:1.5rem;
+}
+
+.quiz-box{
+    text-align:center;
+}
+
+.quiz-box p{
+    margin:25px 0;
+}
+
+.quiz-box button{
+    margin:10px;
+    padding:15px 25px;
+    border:none;
+    border-radius:15px;
+    background:#F4A261;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.dino-dia{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,0.8);
+}
+
+.modal-content{
+    background:#111827;
+    width:500px;
+    max-width:90%;
+    padding:35px;
+    border-radius:20px;
+    border:2px solid #F4A261;
+    box-shadow:0 0 30px rgba(244,162,97,0.4);
+    animation:aparecer 0.4s ease;
+}
+
+.modal-content h2{
+    margin-bottom:20px;
+    color:#F4A261;
+}
+
+.modal-content p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.cerrar{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:scale(0.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+.meteorito{
+    width:100px;
+    height:100px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:-150px;
+    left:-150px;
+}
+
+.caer{
+    animation:caer 2s linear forwards;
+}
+
+@keyframes caer{
+
+    to{
+        transform:translate(120vw,80vh);
+    }
+
+}
+
+.light{
+    background:white;
+    color:black;
+}
+
+#konamiDino{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    font-size:60px;
+    display:none;
+    animation:bailar 1s infinite;
+}
+
+@keyframes bailar{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(10deg);
+    }
+
+    100%{
+        transform:rotate(-10deg);
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+}

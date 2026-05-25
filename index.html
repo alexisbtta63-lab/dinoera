@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DinoEra</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>DinoEra</h1>
+
+    <nav>
+
+        <a href="#timeline">Historia</a>
+        <a href="#dinos">Dinosaurios</a>
+        <a href="#extincion">Extinción</a>
+
+    </nav>
+
+    <button id="modoBtn">🌙</button>
+
+</header>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+
+        <h2>Viaja al Mundo de los Dinosaurios</h2>
+
+        <p>
+            Descubre criaturas gigantes, océanos antiguos,
+            volcanes y la increíble historia del planeta Tierra.
+        </p>
+
+        <a href="#timeline" class="btn">
+            Empezar el viaje
+        </a>
+
+    </div>
+
+</section>
+
+<section id="timeline" class="section">
+
+    <h2>Línea del Tiempo</h2>
+
+    <p class="intro">
+
+        Los dinosaurios dominaron la Tierra durante más
+        de 180 millones de años.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card triasico">
+
+            <h3>Triásico</h3>
+
+            <p>
+                El Triásico comenzó hace 252 millones de años.
+                La Tierra era seca, caliente y llena de volcanes.
+            </p>
+
+            <ul>
+
+                <li>Primeros dinosaurios</li>
+                <li>Muchos desiertos</li>
+                <li>Aparecieron los primeros mamíferos</li>
+                <li>Todo el planeta estaba unido</li>
+
+            </ul>
+
+        </div>
+
+        <div class="card jurasico">
+
+            <h3>Jurásico</h3>
+
+            <p>
+                Durante el Jurásico aparecieron enormes selvas
+                y dinosaurios gigantes.
+            </p>
+
+            <ul>
+
+                <li>Grandes bosques</li>
+                <li>Dinosaurios enormes</li>
+                <li>Primeras aves</li>
+                <li>Reptiles marinos gigantes</li>
+
+            </ul>
+
+        </div>
+
+        <div class="card cretacico">
+
+            <h3>Cretácico</h3>
+
+            <p>
+                El último periodo antes de la extinción masiva.
+            </p>
+
+            <ul>
+
+                <li>Aparecieron flores</li>
+                <li>Vivió el T-Rex</li>
+                <li>Grandes depredadores</li>
+                <li>Terminó con el meteorito</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="dinos" class="section">
+
+    <h2>Dinosaurios Famosos</h2>
+
+    <p class="intro">
+
+        Haz clic sobre cualquier dinosaurio para descubrir
+        toda su información.
+
+    </p>
+
+    <div class="dino-grid">
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Tyrannosaurus Rex')">
+
+            <img src="imagen1.jpg">
+
+            <h3>Tyrannosaurus Rex</h3>
+
+            <p>
+                El rey de los dinosaurios carnívoros.
+            </p>
+
+        </div>
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Triceratops')">
+
+            <img src="imagen2.jpg">
+
+            <h3>Triceratops</h3>
+
+            <p>
+                El famoso dinosaurio de tres cuernos.
+            </p>
+
+        </div>
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Velociraptor')">
+
+            <img src="imagen3.jpg">
+
+            <h3>Velociraptor</h3>
+
+            <p>
+                Rápido, inteligente y peligroso.
+            </p>
+
+        </div>
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Spinosaurus')">
+
+            <img src="imagen4.jpg">
+
+            <h3>Spinosaurus</h3>
+
+            <p>
+                El gigante con vela en la espalda.
+            </p>
+
+        </div>
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Ankylosaurus')">
+
+            <img src="imagen5.jpg">
+
+            <h3>Ankylosaurus</h3>
+
+            <p>
+                El tanque blindado de la prehistoria.
+            </p>
+
+        </div>
+
+        <div class="dino-card"
+        onclick="mostrarInfo('Brachiosaurus')">
+
+            <img src="imagen6.jpg">
+
+            <h3>Brachiosaurus</h3>
+
+            <p>
+                Uno de los dinosaurios más altos.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="extincion" class="extincion">
+
+    <h2>La Gran Extinción</h2>
+
+    <div class="meteorito" id="meteorito"></div>
+
+    <p class="intro">
+
+        Hace 66 millones de años un meteorito impactó
+        el planeta provocando una extinción masiva.
+
+    </p>
+
+    <div class="causas">
+
+        <div class="cause">
+
+            <h3>☄ Meteorito</h3>
+
+            <p>
+                El impacto ocurrió en la actual península de Yucatán.
+            </p>
+
+        </div>
+
+        <div class="cause">
+
+            <h3>🌋 Volcanes</h3>
+
+            <p>
+                Grandes erupciones llenaron el cielo de humo y ceniza.
+            </p>
+
+        </div>
+
+        <div class="cause">
+
+            <h3>❄ Cambio climático</h3>
+
+            <p>
+                La luz solar desapareció durante años.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="extra-info">
+
+        <h3>¿Qué pasó después?</h3>
+
+        <p>
+
+            Después de la extinción los mamíferos comenzaron
+            a evolucionar hasta llegar los humanos.
+
+        </p>
+
+        <p>
+
+            Las aves actuales son descendientes directos
+            de dinosaurios pequeños.
+
+        </p>
+
+    </div>
+
+    <p class="gallina">
+
+        Técnicamente las gallinas son dinosaurios 🐔🦖
+
+    </p>
+
+</section>
+
+<section class="dino-dia">
+
+    <h2>Dino del Día</h2>
+
+    <p id="dinoRandom"></p>
+
+</section>
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="cerrar" onclick="cerrarModal()">
+            &times;
+        </span>
+
+        <h2 id="tituloModal"></h2>
+
+        <div id="textoModal"></div>
+
+    </div>
+
+</div>
+
+<div id="konamiDino">
+
+🦖💃
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
