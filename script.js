@@ -24,7 +24,7 @@
 "Triceratops": {
 
     descripcion:
-    "El Triceratops su nombre significa “cara de tres cuernos” fue un dinosaurio herbívoro que vivió hace aproximadamente 68 millones de años durante el periodo Cretácico tardío. Es uno de los dinosaurios más reconocidos gracias a sus tres cuernos y al gran escudo óseo que tenía detrás de la cabeza. Los tres cuernos eran una de sus principales defensas contra depredadores como el Tyrannosaurus Rex. Los dos cuernos largos sobre sus ojos podían medir más de un metro de largo y eran capaces de causar mucho daño. También se cree que los usaban para pelear entre ellos o para impresionar a otros miembros de su especie.",
+    "El Triceratops su nombre significa “cara de tres cuernos” fue un dinosaurio herbívoro que vivió hace aproximadamente 68 millones de años durante el periodo Cretácico tardío.",
 
     tamaño:
     "9 metros de largo.",
