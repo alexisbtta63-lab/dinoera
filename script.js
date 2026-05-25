@@ -1,9 +1,9 @@
-﻿const informacionDinos = {
+const informacionDinos = {
 
 "Tyrannosaurus Rex": {
 
     descripcion:
-    "El Tyrannosaurus Rex, también conocido como T-Rex, fue uno de los dinosaurios carnívoros más grandes y famosos de toda la historia. Su nombre significa “rey lagarto tirano” y vivió hace aproximadamente entre 68 y 66 millones de años durante el periodo Cretácico tardío, poco antes de la gran extinción de los dinosaurios.",
+    "El Tyrannosaurus Rex, también conocido como T-Rex, fue uno de los dinosaurios carnívoros más grandes y famosos de toda la historia. Su nombre significa rey lagarto tirano y vivió hace aproximadamente entre 68 y 66 millones de años durante el periodo Cretácico tardío.",
 
     tamaño:
     "13 metros de largo.",
@@ -24,7 +24,7 @@
 "Triceratops": {
 
     descripcion:
-    "El Triceratops su nombre significa “cara de tres cuernos” fue un dinosaurio herbívoro que vivió hace aproximadamente 68 millones de años durante el periodo Cretácico tardío.",
+    "El Triceratops fue un dinosaurio herbívoro conocido por sus tres cuernos gigantes y su enorme escudo óseo. Vivió durante el periodo Cretácico tardío y se defendía de depredadores como el T-Rex.",
 
     tamaño:
     "9 metros de largo.",
@@ -45,9 +45,7 @@
 "Velociraptor": {
 
     descripcion:
-    "El Velociraptor fue un dinosaurio carnívoro que vivió hace aproximadamente entre 75 y 71 millones de años durante el periodo Cretácico tardío. Su nombre significa “ladrón veloz” debido a la rapidez y habilidad que tenía para cazar. Era un cazador muy inteligente y rápido. Se alimentaba de pequeños animales y otros dinosaurios más pequeños. Los científicos creen que podía cazar en grupo para atrapar presas más grandes y peligrosas.
-
-Una de sus características más famosas era la enorme garra curva que tenía en cada pata trasera. Esa garra podía medir varios centímetros y la utilizaba para atacar y sujetar a sus presas. Además tenía dientes afilados y mandíbulas fuertes.",
+    "El Velociraptor fue un dinosaurio carnívoro pequeño pero muy inteligente. Era rápido, ágil y cazaba pequeños animales utilizando sus enormes garras curvas.",
 
     tamaño:
     "2 metros de largo.",
@@ -68,7 +66,7 @@ Una de sus características más famosas era la enorme garra curva que tenía en
 "Spinosaurus": {
 
     descripcion:
-    "El Spinosaurus fue uno de los dinosaurios carnívoros más grandes que existieron. Vivió hace aproximadamente entre 112 y 93 millones de años durante el periodo Cretácico. Su nombre significa “lagarto espina” debido a las enormes espinas que tenía en la espalda formando una especie de vela gigante. Una de sus características más impresionantes era la enorme vela de su espalda formada por largas espinas óseas cubiertas de piel. Esa vela podía medir más de un metro y medio de altura y posiblemente le ayudaba a regular su temperatura, atraer pareja o intimidar enemigos.",
+    "El Spinosaurus fue uno de los dinosaurios carnívoros más grandes que existieron. Se caracterizaba por la enorme vela en su espalda y por ser un excelente nadador.",
 
     tamaño:
     "15 metros de largo.",
@@ -89,9 +87,7 @@ Una de sus características más famosas era la enorme garra curva que tenía en
 "Ankylosaurus": {
 
     descripcion:
-    "El Ankylosaurus fue un dinosaurio herbívoro que vivió hace aproximadamente entre 68 y 66 millones de años durante el periodo Cretácico tardío. Su nombre significa “lagarto acorazado” porque tenía el cuerpo cubierto por una gruesa armadura ósea que lo protegía de los depredadores.Una de sus características más famosas era la enorme maza que tenía al final de la cola. Esa cola funcionaba como un martillo gigante y podía golpear con muchísima fuerza para defenderse de depredadores como el Tyrannosaurus Rex.
-
-El Ankylosaurus vivía principalmente en zonas de bosques y llanuras de lo que actualmente es Norteamérica. Gracias a su increíble armadura es considerado uno de los dinosaurios mejor protegidos de toda la prehistoria.",
+    "El Ankylosaurus fue un dinosaurio herbívoro protegido por una gruesa armadura natural. Su cola funcionaba como un enorme martillo para defenderse.",
 
     tamaño:
     "7 metros.",
@@ -112,7 +108,7 @@ El Ankylosaurus vivía principalmente en zonas de bosques y llanuras de lo que a
 "Brachiosaurus": {
 
     descripcion:
-    "El Brachiosaurus fue uno de los dinosaurios más altos que existieron. Vivió hace aproximadamente entre 154 y 153 millones de años durante el periodo Jurásico. Su nombre significa “lagarto brazo” porque sus patas delanteras eran más largas que las traseras.El Brachiosaurus fue uno de los dinosaurios más altos que existieron. Vivió hace aproximadamente entre 154 y 153 millones de años durante el periodo Jurásico. Su nombre significa “lagarto brazo” porque sus patas delanteras eran más largas que las traseras.",
+    "El Brachiosaurus fue uno de los dinosaurios más altos del planeta. Gracias a su enorme cuello podía alcanzar árboles gigantes para alimentarse.",
 
     tamaño:
     "12 metros de altura.",
@@ -166,12 +162,6 @@ function cerrarModal(){
     document.getElementById("modal").style.display = "none";
 }
 
-function resultado(dino){
-
-    document.getElementById("resultado").innerText =
-    "Tu dinosaurio sería: " + dino;
-}
-
 const dinos = [
 
 "Tyrannosaurus Rex",
@@ -179,10 +169,7 @@ const dinos = [
 "Triceratops",
 "Spinosaurus",
 "Ankylosaurus",
-"Brachiosaurus",
-"Stegosaurus",
-"Diplodocus",
-"Allosaurus"
+"Brachiosaurus"
 
 ];
 
